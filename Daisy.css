@@ -1,0 +1,798 @@
+
+/* button top right */
+ button {
+         float:right;
+         margin: .5em;    
+         border-width: 3px; 
+        
+         text-align: center;
+         text-decoration: none;
+         font-size: 12px; 
+         cursor: pointer;
+        opacity: 1;
+         color: black;
+         border: 2px solid #e7e7e7;
+         }
+         button:hover {background-color: #e7e7e7;}
+#myBtn{
+    height:43px;
+    font-family: 'Grandstander', cursive;
+    padding: .9em;
+}
+
+button img {
+            text-align: center;
+            position: relative;
+            }
+        
+  
+header img { 
+           float: left; 
+           margin-right: .5em;
+           margin-top: 0.5em;
+           margin-left: 0.5em;}
+ 
+
+header{ width:100%;
+        height:30%;
+       position:sticky;
+       background-color: white;
+       z-index: 1;
+       }    
+
+       .pagination {
+        display: inline-block;
+        margin-left: 40%;
+      }
+      
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      
+      .pagination a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+      
+      .pagination a:hover:not(.active) {background-color: #ddd;}
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 90%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      background-color: #f2f2f2;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 30%;
+      height: auto;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    
+      animation-name: animatetop;
+      animation-duration: 0.4s;
+      border-radius: 5px;
+    }
+
+    
+    
+    /* Add Animation */
+    
+    
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+    
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .modal-header {
+      padding: 1px 16px;
+      background-color:#508d69;
+      color:white;
+      text-align: center;
+      
+    }
+    
+    .modal-body {
+        margin-top: .5em;
+    }
+    
+/* ------------- join club------------ */ 
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+          }
+
+          input[type=text],input[type=tel],input[type=email], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+        
+          
+          input[type=submit] {
+            width: 60%;
+            background-color:#508d69;
+            color:white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 125px;
+           position: relative;
+            
+          }
+          
+          input[type=submit]:hover {
+            background-color:black;
+            font: 1em sans-serif;
+            text-align: center;
+          }
+
+          
+    /*--------------------- remove 123 --------------------------*/
+    
+    .radiolist {
+      list-style-type: none;
+    }
+
+    .selectdata{
+      display: inline;
+    }
+   /*--------------------- D1 CSS FILE --------------------------*/
+    
+   html { color: #202020;
+    font-family: 'Grandstander', cursive;
+      height: 100%; 
+      width: 100%; 
+      background-color:white;
+    } 	
+
+ /*------------- posts---------------- */
+  
+  .container {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .heading {
+    text-align: left;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    
+  }
+  
+  .card-header {
+    text-align: center;
+    color: #fff;
+
+  }
+
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+
+  /*--------------------- menu --------------------------*/
+  nav
+  {
+      margin: 0 auto;
+      padding: 1em 2em;
+      text-align: center;
+      background-color:#FFF0F5;
+      position:sticky;
+  }
+  
+  nav a
+  {
+      color: rgb(15, 14, 14);
+      text-decoration: none;
+      font: 20px;
+      margin: 0px 10px;
+      padding: 10px 10px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+  }
+  
+  nav a:hover {  color: green;}
+    
+  /*--------------------- you are here --------------------------*/
+
+    .breadcrumb{
+        text-align: center;
+        font-size: 20px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #ffd7e4;
+        
+        position:sticky;
+     }
+  /*--------------------- posts border --------------------------*/
+     fieldset{
+   
+      padding-top: 2%;
+      margin-top: 3%;
+      margin-left: 2%;
+      margin-right: .5%;
+     
+    }
+
+    legend { 
+     font-size: 30px;
+    }
+
+    /*--------------------- remove 123 --------------------------*/
+    
+    .radiolist {
+      list-style-type: none;
+    }
+
+    .selectdata{
+      width:30%;
+      margin-left: 10px;
+     
+    }
+     
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+/*---------------------Amal-------------------*/
+#form-pupup {
+  display: none;
+}
+#fields {
+width: 75%;
+height: 91%;
+position: relative;
+top: 3%;
+left: 3%;
+margin-left: 20px;
+}
+#x {
+position: relative;
+top: -1%;
+left: 85%;
+height: 17px;
+width: 18px;
+margin: 0px;
+}
+#containerForm {
+  width: 26%;
+  height: 50%;
+  position: relative;
+  top: 0%;
+  left: 40%;
+  background-color: white;
+  padding-bottom: 10px;
+  border: double;
+  padding-top: 8px;
+}
+#applyBtn {
+position: relative;
+top: 6%;
+}
+#formList {
+display: grid;
+}
+/* Add Animation */
+
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+
+/*------------------ ROWA ------------------*/
+
+
+.legend1 { 
+  text-align: center;
+
+}
+
+
+.fieldsetTitle {
+  text-align: center;
+  position: relative;
+ top:-1em;
+}
+
+.fieldsetlink {
+  text-align: center;
+  position: relative;
+ top:-2em;
+}
+
+
+fieldset h5 {
+  text-align: right;
+  position:relative;
+  top:-4.375em;
+}
+
+.post{
+ margin:-70px 10px 20px 10px;
+    display:block;
+}
+
+.arti{
+  font-size: 25px;
+}
+
+.post span {
+  font-weight: bold;
+}
+
+.post img{
+	 
+  float: left;
+  margin-right:.5em;
+  
+
+}	 
+.comments {
+  background-color: #ffd7e4;
+  padding: 0;
+  width: 80%;
+  margin:0px auto 10px auto;
+    display:block;
+    
+}
+
+.comments textarea {
+  background-color:white;
+  border-width: 0 0 1px 0;
+  border-color: black;
+  border-radius: 0px;
+  height: 60px;
+}
+
+.comments  input[type=email] {
+  width: 80%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+  top: 0.5em;
+  left: 2em;
+}
+
+.comments  input[type=text]  {
+  width: 80%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+  top: 0.5em;
+  left: 5.75em;
+}
+
+.comments label {
+  width: 80%;
+  margin: 8px 0;
+  display: inline-block;
+  position: relative;
+  top: 0.5em;
+  left: 5em;
+}
+
+.comments  input[type=submit] {
+    width: 30%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 125px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    margin:0px auto;
+    display:block;
+   
+  }
+
+
+.womenReply {
+  width:50px;
+  height: auto;
+  float: left;
+  position:relative;
+  left:1em;
+  top: 0.5em;
+ }
+
+.women {
+ width:70px;
+ height: auto;
+ float: left;
+ position:relative;
+ margin-right: 0.313em;
+ top: -5em;
+
+ margin-right:.5em;
+}
+
+.username {
+ width: 50%;
+ height: auto;
+ justify-content: left;
+ position: relative;
+ top: 1em;
+}
+
+.username p {
+display: inline-block;
+text-align: left;
+position:relative;
+top:-6em;
+left:0%;
+font-size: small;
+}
+
+.userComment {
+position:relative;
+top: -4em;
+}
+
+.leaveReply  {
+  position: relative;
+text-align: center;  
+margin: 0 auto -70px auto ;
+}
+.leaveReply h4  {
+display: inline-block;
+position: relative;
+}
+
+.enteringComment {
+ padding:1.250em;
+ margin:-1.250em 4.375em 1.250em 4.375em;
+ background: #fff;
+ text-align: left;
+ color: gray;
+
+}
+
+.enteringComment a {
+color: gray;
+text-decoration: none;
+}
+
+.enteringComment a:hover {
+color:hotpink;
+}
+
+  .comments2 {
+  background-color: #ffd7e4;
+  padding: 10px 0;
+  margin:30px 10px 30px 10px;
+  display:block;
+    
+} 
+.centerFieldset{
+ margin:20px 0px 20px 10px;
+    display:inline-block;
+}
+
+.like {
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.share{
+width: 20px;
+height:20px;
+padding :0;
+}  
+
+.likeInput {
+display:block;
+position: absolute;
+right: 2.7em;
+top: .35em;
+height: 22px;
+width: 80px;
+z-index: -1;
+}
+
+.centerFieldset1{
+ margin:20px 10px 20px 10px;
+    display:block;
+}
+         
+ /*---------------------Nouf-------------------*/
+/*about us */
+#about{
+  text-align: center;
+
+}
+#Pabout{
+font-size:20px;
+font-style:italic;}
+/*------------------*/
+/*contact us page*/
+.submitcontact {
+  color: white;	
+  cursor:pointer;
+  background-color:#ffd7e4;
+  text-align: center;
+}
+.fa-twitter{color:pink;}
+.fa-facebook{color:pink;}
+.fa-tumblr{color:pink;}
+.fa-pinterest{color:pink;}
+table, th, td {
+border: 1px solid black;
+}
+table {
+border-collapse: collapse;
+
+}
+th,td {
+   padding: 40px;
+   width:10%;
+text-align: left;
+}
+tr:nth-child(even) {background-color: #FAEBD7;}
+#logocontact {
+ text-align: right;
+         
+
+    }
+
+.imgcontact  {	
+ text-align: right;
+
+     height:0;
+     width:0;
+     float:left;
+}
+.headcontact{
+ text-align: center;
+}
+.splitR{
+float:right;
+  width: 50%;
+ text-align: center;
+}
+.splitleft{
+ float:left;
+  width: 50%;
+}
+
+/*--------------*/
+
+/*sitemap*/
+#mapH{
+
+font-size:45px;
+font-style:italic;
+    text-align: center;
+
+}
+
+.sit{display: flex;
+justify-content: center;}
+#mysite:hover {opacity: 0.7;}
+#mysite{
+  display: block;
+
+margin-left: auto;
+margin-right: auto;
+width: 50%;}
+/*----------------------------------*/
+
+form > div {
+  position: relative;
+  overflow: hidden;
+}
+
+form input[type=text]:valid, form input[type=tel]:valid, form input[type=email]:valid, form textarea:valid {
+ z-index: 2;
+}
+
+form input[type=text],form input[type=tel], form input[type=email], form textarea {
+  width: 100%;
+  border: 2px solid gray;
+  background: white;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  padding: 8px 12px;
+  outline: 0;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #ff9822;
+}
+form input:focus + label, form textarea:focus + label {
+  background: #ff9822;
+  color: white;
+  font-size: 100%;
+  padding: 1px 6px;
+  z-index: 2;
+  text-transform: uppercase;
+  text-align: center;
+}
+.label {
+  transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+  position: absolute;
+  margin: 7px 100px;
+  display: block;
+  padding: 7px 0px;
+  
+}
+
+.textArealabel {
+  transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+  position: absolute;
+  display: block;
+  padding: 7px 0px
+  
+}
+
+form input[type=radio], form input[type=checkbox] {
+  z-index: 4;
+}
+
+form textarea {
+  display: block;
+  resize: vertical;
+}
+
+
+form.go-right .label, form.go-right .textArealabel {
+  top: 2px;
+  right: 100%;
+  width: 100%;
+  margin-right: -102%;
+  bottom: 2px;
+}
+
+form.go-right input:focus + .label, form.go-right textarea:focus + .textArealabel {
+  right: 0;
+  margin-right: 0;
+  width: 40%;
+  padding-top: 5px;
+}
+
+.modal-content2 {
+  position: relative;
+  background-color: #f2f2f2;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 5px;
+}
+
+
+.modal-content2 input[type=submit] {
+  display: block;
+  margin: 10px auto;
+}
+
+
+
+.small {
+  display: inline-block;
+  margin: 0%;
+  font-size: 12px;
+
+}
+.smallA {
+  display: inline-block;
+  margin: 0%;
+  font-size: 30px;
+
+} 
